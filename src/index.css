@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --------------------------------- General -------------------------------- */
+
+:root {
+	font-family: "DM Sans", sans-serif;
+}
+
+* {
+	scroll-behavior: smooth;
+}
+
+/* ------------------------------- Typography ------------------------------- */
+
+.text-h2 {
+	font-family: "DM Sans";
+	color: theme("colors.blue.500");
+
+	@apply text-h2_mobile md:text-h2_normal;
+}
+
+.text-h3 {
+	font-family: "DM Sans";
+	color: theme("colors.gray.800");
+
+	@apply text-h3_mobile md:text-h3_normal;
+}
+
+.text-h4 {
+	font-family: "DM Sans";
+	color: theme("colors.gray.800");
+
+	@apply text-h4_normal;
+}
+
+.text-h5 {
+	font-family: "DM Sans";
+	color: theme("colors.gray.800");
+
+	@apply text-h5_normal;
+}
+
+.text-p1 {
+	font-family: "DM Sans";
+	color: theme("colors.gray.800");
+
+	@apply text-p1_mobile md:text-p1_normal;
+}
+
+.text-p2 {
+	font-family: "DM Sans";
+	color: theme("colors.gray.500");
+
+	@apply text-p2_mobile md:text-p2_normal;
+}
+
+.text-navbar {
+	font-family: "DM Sans";
+	color: theme("colors.gray.800");
+	cursor: pointer;
+
+	@apply text-navbar_normal;
+}
+
+.text-navbar:hover {
+	color: #2563eb;
+}
+
+.text-button {
+	display: inline-flex;
+	gap: 8px;
+	padding: 12px 16px;
+	border-radius: 12px;
+
+	font-family: "DM Sans";
+	background-color: theme("colors.blue.500");
+	color: theme("colors.blue.50");
+	cursor: pointer;
+
+	@apply text-button_normal;
+}
+
+.text-label {
+	display: inline-flex;
+	padding: 8px 16px;
+	border-radius: 99px;
+
+	font-family: "DM Sans";
+	background-color: theme("colors.slate.100");
+	color: theme("colors.slate.500");
+
+	@apply text-label_mobile md:text-label_normal;
+}
+
+.text-label-button {
+	display: inline-flex;
+	padding: 8px 16px;
+	border-radius: 99px;
+	cursor: pointer;
+
+	font-family: "DM Sans";
+	background-color: theme("colors.blue.500");
+	color: theme("colors.blue.50");
+
+	@apply text-label_mobile md:text-label_normal;
+}
+
+/* ---------------------------------- Color --------------------------------- */
+
+.bg-navbar {
+	background: linear-gradient(180deg, rgba(203, 213, 225, 0.25) 0%, rgba(203, 213, 225, 0.15) 100%);
+	box-shadow: 0px -8px 32px 8px rgba(0, 0, 0, 0.02);
+	backdrop-filter: blur(27.5px);
+}
+
+/* --------------------------- Beautiful Animation -------------------------- */
+/* ----------- Source: https://codepen.io/nelledejones/pen/gOOPWrK ---------- */
+
+.gelatine {
+	display: inline-block;
+	animation: gelatine 0.5s infinite;
+}
+
+.pulse {
+	animation: pulse 0.8s infinite ease-in-out alternate;
+}
+
+.hithere {
+	animation: hithere 2.5s ease infinite;
+}
+
+.bounce {
+	animation: bounce 1.5s ease infinite;
+}
+
+.shake {
+	animation: shake 1.5s ease infinite;
+}
+
+.flip {
+	backface-visibility: visible !important;
+	animation: flip 2s ease infinite;
+}
+
+.swing {
+	transform-origin: top center;
+	animation: swing 2.5s ease infinite;
+}
+
+@keyframes gelatine {
+	from,
+	to {
+		transform: scale(1, 1);
+	}
+	25% {
+		transform: scale(0.9, 1.1);
+	}
+	50% {
+		transform: scale(1.1, 0.9);
+	}
+	75% {
+		transform: scale(0.95, 1.05);
+	}
+}
+
+@keyframes pulse {
+	from {
+		transform: scale(0.95);
+	}
+	to {
+		transform: scale(1.1);
+	}
+}
+
+@keyframes hithere {
+	30% {
+		transform: scale(1.2);
+	}
+	40%,
+	60% {
+		transform: rotate(-20deg) scale(1.2);
+	}
+	50% {
+		transform: rotate(20deg) scale(1.2);
+	}
+	70% {
+		transform: rotate(0deg) scale(1.2);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes bounce {
+	0%,
+	20%,
+	50%,
+	80%,
+	100% {
+		transform: translateY(0);
+	}
+	40% {
+		transform: translateY(-6px);
+	}
+	60% {
+		transform: translateY(-3px);
+	}
+}
+
+@keyframes shake {
+	0%,
+	100% {
+		transform: translateX(0);
+	}
+	10%,
+	30%,
+	50%,
+	70%,
+	90% {
+		transform: translateX(-2px);
+	}
+	20%,
+	40%,
+	60%,
+	80% {
+		transform: translateX(2px);
+	}
+}
+
+@keyframes flip {
+	0% {
+		transform: perspective(400px) rotateY(0);
+		animation-timing-function: ease-out;
+	}
+	40% {
+		transform: perspective(400px) translateZ(20px) rotateY(170deg);
+		animation-timing-function: ease-out;
+	}
+	50% {
+		transform: perspective(400px) translateZ(20px) rotateY(190deg) scale(1);
+		animation-timing-function: ease-in;
+	}
+	80% {
+		transform: perspective(400px) rotateY(360deg) scale(0.95);
+		animation-timing-function: ease-in;
+	}
+	100% {
+		transform: perspective(400px) scale(1);
+		animation-timing-function: ease-in;
+	}
+}
+
+@keyframes swing {
+	20% {
+		transform: rotate(15deg);
+	}
+	40% {
+		transform: rotate(-10deg);
+	}
+	60% {
+		transform: rotate(5deg);
+	}
+	80% {
+		transform: rotate(-5deg);
+	}
+	100% {
+		transform: rotate(0deg);
+	}
+}
+
+/* ----------------------- Add Animation to Utilities ----------------------- */
+/* ------------------ Biar bisa diakai di misal hover:shake ----------------- */
+
+@layer utilities {
+	.pulse {
+		animation: pulse 0.8s infinite ease-in-out alternate;
+	}
+
+	.shake {
+		animation: shake 1.5s ease infinite;
+	}
+
+	.flip {
+		backface-visibility: visible !important;
+		animation: flip 1.5s ease infinite;
+	}
+
+	@keyframes pulse {
+		from {
+			transform: scale(0.95);
+		}
+		to {
+			transform: scale(1.1);
+		}
+	}
+
+	@keyframes shake {
+		0%,
+		100% {
+			transform: translateX(0);
+		}
+		10%,
+		30%,
+		50%,
+		70%,
+		90% {
+			transform: translateX(-2px);
+		}
+		20%,
+		40%,
+		60%,
+		80% {
+			transform: translateX(2px);
+		}
+	}
+
+	@keyframes flip {
+		0% {
+			transform: perspective(400px) rotateY(0);
+			animation-timing-function: ease-out;
+		}
+		40% {
+			transform: perspective(400px) translateZ(20px) rotateY(170deg);
+			animation-timing-function: ease-out;
+		}
+		50% {
+			transform: perspective(400px) translateZ(20px) rotateY(190deg) scale(1);
+			animation-timing-function: ease-in;
+		}
+		80% {
+			transform: perspective(400px) rotateY(360deg) scale(0.95);
+			animation-timing-function: ease-in;
+		}
+		100% {
+			transform: perspective(400px) scale(1);
+			animation-timing-function: ease-in;
+		}
+	}
+}
+
+/* ---------------------------------- Other --------------------------------- */
