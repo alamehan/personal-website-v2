@@ -4,7 +4,7 @@ const IconContact = (props) => {
 	return (
 		<>
 			<a href={props.link} target="_blank">
-				<img src={props.image} alt={props.alt} className="hover:flip" />
+				<img src={props.image} alt={props.alt} className={`hover:flip ${props.customClass}`}/>
 			</a>
 		</>
 	);

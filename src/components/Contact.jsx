@@ -30,14 +30,14 @@ const Contact = () => {
 					{/* ---------------------------------- Links --------------------------------- */}
 
 					<div className={`${styles.maxWidth} ${styles.flexCenter} mt-10 max-w-[320px] flex-wrap gap-4 md:max-w-full`}>
-						<IconContact link="https://www.linkedin.com/in/alamehan" image={contactLinkedin} alt="LinkedIn" />
-						<IconContact link="https://www.behance.net/alamehan" image={contactBehance} alt="Behance" />
-						<IconContact link="https://dribbble.com/alamehan" image={contactDribbble} alt="Dribbble" />
-						<IconContact link="https://github.com/alamehan" image={contactGithub} alt="Github" />
-						<IconContact link="https://www.kaggle.com/raihanallaam" image={contactKaggle} alt="Kaggle" />
-						<IconContact link="https://alamehan.medium.com/" image={contactMedium} alt="Medium" />
-						<IconContact link="https://www.instagram.com/alamehan/" image={contactInstagram} alt="Instagram" />
-						<button target="_blank" onClick={handleMoreClick}>
+						{/* <IconContact link="https://www.linkedin.com/in/alamehan" image={contactLinkedin} alt="LinkedIn" customClass="spin"/> */}
+						<IconContact link="https://dribbble.com/alamehan" image={contactDribbble} alt="Dribbble" customClass="spin-2"/>
+						<IconContact link="https://www.behance.net/alamehan" image={contactBehance} alt="Behance" customClass="spin"/>
+						<IconContact link="https://github.com/alamehan" image={contactGithub} alt="Github" customClass="spin-2"/>
+						<IconContact link="https://www.kaggle.com/raihanallaam" image={contactKaggle} alt="Kaggle" customClass="spin"/>
+						{/* <IconContact link="https://alamehan.medium.com/" image={contactMedium} alt="Medium" customClass="spin-2"/> */}
+						<IconContact link="https://www.instagram.com/alamehan/" image={contactInstagram} alt="Instagram" customClass="spin-2"/>
+						<button target="_blank" onClick={handleMoreClick} className="spin">
 							<img src={contactAlamehan} alt="Alamehan Website" className="hover:flip" />
 						</button>
 					</div>
@@ -59,10 +59,10 @@ const Contact = () => {
 											<h4 className="text-h4 mt-4">Old Website</h4>
 										</div>
 										<div className="flex justify-center gap-4 bg-blue-100 px-4 py-4 lg:justify-start">
-											<Button targetLink={"https://alamehan.github.io/alamehan-v1"}>Open</Button>
-											<Button onClick={handleMoreClick} customClass={"!bg-rose-500 !text-white"}>
+											<Button onClick={handleMoreClick} customClass={"!bg-slate-300 !text-slate-700"}>
 												Cancel
 											</Button>
+											<Button targetLink={"https://alamehan.github.io/alamehan-v1"}>Open</Button>
 										</div>
 									</div>
 								</div>

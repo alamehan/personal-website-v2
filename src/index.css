@@ -125,6 +125,15 @@
 	animation: gelatine 0.5s infinite;
 }
 
+.spin {
+	animation: spin 12s infinite linear;
+}
+
+.spin-2 {
+	animation: spin 6s infinite linear;
+}
+
+
 .pulse {
 	animation: pulse 0.8s infinite ease-in-out alternate;
 }
@@ -164,6 +173,24 @@
 	}
 	75% {
 		transform: scale(0.95, 1.05);
+	}
+}
+
+@keyframes spin {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes spin-2 {
+	from {
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(360deg);
 	}
 }
 
