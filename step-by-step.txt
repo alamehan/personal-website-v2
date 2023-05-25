@@ -6,7 +6,7 @@ Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
 1. Install Node js versi 18.16.0 (LTS)
 2. Install VS Code Extension
    - Prettier code formatter
-   - ES7 + React/Redux/React-Native snippets
+   - ES7 + React/Redux/React-Native snippets (gunakan snippets "rafce" saat membuat component baru) 
 3. Buat folder "my project"
    - Lalu buka cmd di folder tersebut
 4. Install Vite
@@ -36,7 +36,7 @@ Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
    - BUAT						src/style.js			(tailwind general style)
    - SIMPAN semua asset di		src/assets/..here..
    - BUAT wadah asset			src/assets/index.js
-   - BUAT components di			src/components/..here..
+   - BUAT components di			src/components/..here..	(gunakan snippets "rafce")
    - BUAT wadah componens		src/components/index.js
    - BUAT constants				src/constants/index.js	(isi dengan semua data statis, jika diperlukan)
    - ATUR						index.html				(atur favicon dan judul web disini)
@@ -45,3 +45,10 @@ Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
     > npm run build
 12. Selesai
 ===========================================================================================
+Readmore:
+- https://vitejs.dev/guide/
+- https://tailwindcss.com/docs/guides/vite
+- https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
+- Offline web apps bundled into a single HTML file that you can double-click and open directly in your web browser, no server needed.
+  > https://stackoverflow.com/questions/67031295/how-to-open-a-static-website-in-localhost-but-generated-with-vite-and-without-ru
+  > https://github.com/richardtallent/vite-plugin-singlefile
