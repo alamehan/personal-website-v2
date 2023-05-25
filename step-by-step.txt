@@ -45,10 +45,17 @@ Catatan: agar tidak terjadi error, gunakan versi teknologi yang sama.
     > npm run build
 12. Selesai
 ===========================================================================================
-Readmore:
+Read more:
 - https://vitejs.dev/guide/
 - https://tailwindcss.com/docs/guides/vite
 - https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
 - Offline web apps bundled into a single HTML file that you can double-click and open directly in your web browser, no server needed.
   > https://stackoverflow.com/questions/67031295/how-to-open-a-static-website-in-localhost-but-generated-with-vite-and-without-ru
   > https://github.com/richardtallent/vite-plugin-singlefile
+===========================================================================================
+Note:
+- Link repository proyek ini: https://github.com/alamehan/personal-website-v2
+- Setelah di build push ke: https://github.com/alamehan/alamehan.github.io
+- Daftar Projects Alamehan.github.io:
+  - ATOZ Mind: https://github.com/alamehan/atoz-mind
+  - Upcoming...
