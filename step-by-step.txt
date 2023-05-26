@@ -58,4 +58,4 @@ Note:
 - Setelah di build push ke: https://github.com/alamehan/alamehan.github.io
 - Daftar Projects Alamehan.github.io:
   - ATOZ Mind: https://github.com/alamehan/atoz-mind
-  - Upcoming...
+  - NiceList: https://github.com/alamehan/nice-list-web
