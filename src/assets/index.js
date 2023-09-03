@@ -34,6 +34,7 @@ import hobbyNiceList from "./hobby-nicelist.svg";
 import hobbyTheReaderrr from "./hobby-thereaderrr.svg";
 import hobbyAtozMind from "./hobby-atozmind.svg";
 import hobbyRightTr4ck from "./hobby-righttr4ck.svg";
+import hobbyDeepDive from "./hobby-deep-dive.svg";
 import hobbyKnowYourself101 from "./hobby-knowyourself101.svg";
 import hobbyDesignShowcase from "./hobby-design-showcase.svg";
 import hobbyInsightStories from "./hobby-insighstories.svg";
@@ -83,6 +84,7 @@ export {
   hobbyTheReaderrr,
   hobbyAtozMind,
   hobbyRightTr4ck,
+  hobbyDeepDive,
   hobbyKnowYourself101,
   hobbyDesignShowcase,
   hobbyInsightStories,

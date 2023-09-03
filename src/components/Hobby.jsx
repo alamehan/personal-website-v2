@@ -1,7 +1,7 @@
 import styles from "../style";
 import { useState } from "react";
 import { Button, CardHobby } from "../components";
-import { hobbyAnggrekClassifier, hobbyNiceVizual, hobbySatuKlik, hobbyCheatSheet, hobbyNiceList, hobbyTheReaderrr, hobbyAtozMind, hobbyRightTr4ck, hobbyKnowYourself101, hobbyDesignShowcase, hobbyInsightStories, hobbyPetualanganOemar } from "../assets";
+import { hobbyAnggrekClassifier, hobbyNiceVizual, hobbySatuKlik, hobbyCheatSheet, hobbyNiceList, hobbyTheReaderrr, hobbyAtozMind, hobbyRightTr4ck, hobbyDeepDive, hobbyKnowYourself101, hobbyDesignShowcase, hobbyInsightStories, hobbyPetualanganOemar } from "../assets";
 
 const Hobby = () => {
 	const [showMore, setShowMore] = useState(false);
@@ -32,12 +32,13 @@ const Hobby = () => {
 					<CardHobby image={hobbyTheReaderrr} alt="The Readerrr" link="https://alamehan.github.io/alamehan-v1/epub/" classCard="bg-slate-100" title="The Readerrr" description="Curated for book lovers. Useful tools, book recommendations, and selected reading lists." />
 					<CardHobby image={hobbyAtozMind} alt="ATOZ Mind" link="https://alamehan.github.io/projects/atoz-mind/" classCard="bg-pink-100" title="ATOZ Mind" description="A collection of mind maps on various topics. See the Big Picture!" />
 					<CardHobby image={hobbyRightTr4ck} alt="Right Tr4ck" link="https://alamehan.github.io/alamehan-v1/road/" classCard="bg-orange-100" title="Right Tr4ck" description="A learning framework. Want to learn something new and don't know where to start?" />
-					<CardHobby image={hobbyKnowYourself101} alt="Know Yourself 101" link="https://drive.google.com/drive/u/3/folders/1q2XKCioGNsoqeyc-NfiG0BcaAXIfwCwD" classCard="bg-lime-100" title="Know Yourself 101" description="Find out who you really are. All great achievements start with knowing yourself." />
+					<CardHobby image={hobbyDeepDive} alt="DeepDive" link="https://alamehan.github.io/projects/deep-dive/" classCard="bg-sky-100" title="DeepDive" description="Deep dive into any subject with the powerful of GPT-4. Comprehensively." />
 
 					{/* ---------------------------- Show More Content --------------------------- */}
 
 					{showMore && (
 						<>
+							<CardHobby image={hobbyKnowYourself101} alt="Know Yourself 101" link="https://drive.google.com/drive/u/3/folders/1q2XKCioGNsoqeyc-NfiG0BcaAXIfwCwD" classCard="bg-lime-100" title="Know Yourself 101" description="Find out who you really are. All great achievements start with knowing yourself." />
 							<CardHobby image={hobbyDesignShowcase} alt="Design Showcase" link="https://alamehan.github.io/alamehan-v1/portfolios.html" classCard="bg-indigo-100" title="Design Showcase" description="Design exploration such as digital illustration, logo design, playing with color, etc." />
 							<CardHobby image={hobbyInsightStories} alt="Insight Stories" link="https://alamehan.medium.com/selamat-datang-di-alamehan-35a43da9d87e" classCard="bg-slate-100" title="Insight Stories" description="Sharing insights, book reviews, and stories about life. Read Raihan's stories here." />
 							<CardHobby image={hobbyPetualanganOemar} alt="Petualangan Oemar" link="http://petualanganoemar.blogspot.com/" classCard="bg-sky-100" title="Petualangan Oemar" description="A simple game created using the RPG maker engine in 2012. An archive." />
